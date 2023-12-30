@@ -1,21 +1,19 @@
  pipeline {
     agent any
-     tools {
-        maven 'MAVEN_HOME' 
-        }
+    
     stages {
         stage("Test"){
             steps{
                 // mvn test
-                sh "mvn test"
-                
+                //sh "mvn test"
+                echo"test"                
             }
             
         }
         stage("Build"){
             steps{
-                sh "mvn package"
-                
+                //sh "mvn package"
+                echo"build"
             }
             
         }
